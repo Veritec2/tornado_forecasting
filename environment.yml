@@ -1,0 +1,22 @@
+name: tornado_forecasting
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyter
+  - jupyterlab
+  - xarray # For meteorilogical data
+  - netcdf4 # For GRIB/NetCDF files
+  - cartopy # For map plotting
+  - metpy # Meteorilogical calculations
+  - pip
+  - pip:
+    - torch
+    - mlflow # For experiment tracking
+    - python-dotenv

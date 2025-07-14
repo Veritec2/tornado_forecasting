@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Data files (add specific large files)
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.h5
+*.hdf5
+*.nc
+*.grib
+*.grib2
+
+# But track small example data
+!data/examples/*.csv
+
+# Model files
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+
+# Large data directories (if needed)
+data/raw/large/
+data/processed/large/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Reports (keep source, ignore generated)
+reports/*.pdf
+reports/*.docx
+reports/figures/*.png
+reports/figures/*.jpg
+!reports/figures/.gitkeep
