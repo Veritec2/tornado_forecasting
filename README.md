@@ -63,7 +63,7 @@ tornado-forecasting/
 - Surface observation stations (ASOS/AWOS)
 - Upper air soundings
 - Satellite imagery
-- ECM
+- ECMWF Reanalysis Data
 
 *Note: Data files are not included in the repository due to size constraints. See `data/README.md` for download instructions.*
 
