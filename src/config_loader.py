@@ -1,12 +1,17 @@
 ﻿"""
-Configuration loader with an intentional bug
+Configuration loader - bug fixes applied
 """
+import json
 
 def load_config(config_path):
     """Load configuration file"""
-    # BUG: This will fail - missing 'encoding' parameter
-    with open(config_path, 'r') as f:
-        config = f.read()
-    
-    # BUG: Wrong variable name
-    return configuration  # Should be 'config'
+    # FIXED: Added encoding parameter and proper error handling
+    try:
+        with open(config_path, 'r', encoding='utf-8') as f:
+            config_data = json.load(f)
+        
+        # FIXED: Return correct variable name
+        return config_data
+    except Exception as e:
+        print(f"Error loading config: {e}")
+        return {}
